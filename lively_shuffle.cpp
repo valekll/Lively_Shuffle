@@ -1,3 +1,12 @@
+/**
+ * @file lively_shuffle.cpp
+ * @brief This is the main program for Lively Shuffle. Adds a shuffle functionality to Lively.
+ *
+ * @author valekll
+ * @date 2025-03-12
+ * @version 1.0
+ */
+
 #include <windows.h>
 #include <vector>
 #include <string>

@@ -61,3 +61,6 @@ If you encounter any issues, check:
 - **Lively Wallpaper Documentation**: [Lively Docs](https://rocksdanister.github.io/lively/)
 - **MinGW-w64 Setup**: [MinGW-w64 Installation Guide](https://www.mingw-w64.org/)
 - Ensure your **Lively PATH** is correctly set for easier access.
+
+## Author
+[**valekll**](https://github.com/valekll)

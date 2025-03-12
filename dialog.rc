@@ -1,3 +1,12 @@
+/**
+ * @file dialog.rc
+ * @brief The dialog for Lively Shuffle.
+ *
+ * @author valekll
+ * @date 2025-03-12
+ * @version 1.0
+ */
+
 #include <windows.h>
 
 101 DIALOGEX 0, 0, 220, 70
