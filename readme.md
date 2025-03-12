@@ -12,7 +12,7 @@ To build and run Lively Shuffle, you need:
 - **Windows 10 or 11**
 - **MinGW-w64** (for compiling on Windows)
 - **Lively Wallpaper** (Download: [Lively Wallpaper](https://rocksdanister.github.io/lively/))
-- **LivelyCU** (Command Line Tool for Lively)
+- **LivelyCU** (Command Line Tool for Lively. Download: [Lively Command Utility](https://github.com/rocksdanister/lively/releases/download/v2.0.4.0/lively_command_utility.zip))
 - **Lively PATH variable** (Recommended for easy access)
 
 ---
@@ -58,7 +58,7 @@ Your wallpapers will now shuffle randomly based on your settings. 🎉
 
 ## Need Help?
 If you encounter any issues, check:
-- **Lively Wallpaper Documentation**: [Lively Docs](https://rocksdanister.github.io/lively/)
+- **Lively Wallpaper Documentation**: [Lively Docs](https://rocksdanister.github.io/lively/) [Lively Github](https://github.com/rocksdanister/lively) [Lively Command Line Controls](https://github.com/rocksdanister/lively/wiki/Command-Line-Controls)
 - **MinGW-w64 Setup**: [MinGW-w64 Installation Guide](https://www.mingw-w64.org/)
 - Ensure your **Lively PATH** is correctly set for easier access.
 
