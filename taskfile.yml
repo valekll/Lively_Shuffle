@@ -1,0 +1,59 @@
+version: '3'
+
+tasks:
+  dialog:
+    desc: Compile the resource file (dialog.rc -> dialog.o)
+    cmds:
+      - echo "Compiling resource file..."
+      - windres dialog.rc -o dialog.o
+      - echo "Resource compilation complete."
+
+  shuffle:
+    desc: Compile the C++ program (lively_shuffle.cpp -> lively_shuffle.exe)
+    deps: [dialog]
+    cmds:
+      - echo "Compiling main program..."
+      - g++ -o lively_shuffle.exe lively_shuffle.cpp dialog.o -std=c++17 -mwindows -lstdc++fs
+      - echo "C++ compilation complete."
+
+  icon:
+    desc: Set the application icon for lively_shuffle.exe
+    deps: [shuffle]
+    cmds:
+      - echo "Setting the application icon..."
+      - rcedit lively_shuffle.exe --set-icon lively_shuffle.ico
+      - echo "Icon applied successfully."
+
+  build:
+    desc: Full build process (compile resources, program, and set icon)
+    deps: [icon]
+    cmds:
+      - echo "Build process completed."
+
+  package:
+    desc: Build the installer using Inno Setup
+    deps: [build]
+    cmds:
+      - echo "Running Inno Setup..."
+      - "iscc lively_shuffle.iss"
+      - echo "Installer created successfully."
+
+  clean:
+    desc: Remove compiled files
+    cmds:
+      - echo "Cleaning compiled files..."
+      - rm -f lively_shuffle.exe dialog.o
+      - echo "Cleanup complete."
+
+  clean-full:
+    desc: Remove all build artifacts including installer
+    cmds:
+      - echo "Cleaning project files..."
+      - rm -f lively_shuffle.exe dialog.o Output\*.exe
+      - echo "Project cleaned successfully."
+
+  all:
+    desc: Run the full process (compile the program, set the icon, and build the package)
+    deps: [package]
+    cmds:
+      - echo "Full build and packaging process completed."

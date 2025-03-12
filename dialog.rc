@@ -1,0 +1,12 @@
+#include <windows.h>
+
+101 DIALOGEX 0, 0, 220, 70
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Set Shuffle Timer"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    DEFPUSHBUTTON   "OK", IDOK, 50, 50, 50, 14
+    PUSHBUTTON      "Cancel", IDCANCEL, 115, 50, 50, 14
+    EDITTEXT        1001, 15, 25, 190, 14, ES_AUTOHSCROLL
+    LTEXT           "Enter shuffle delay in seconds:", -1, 15, 5, 190, 8
+END

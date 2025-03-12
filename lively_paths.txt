@@ -1,0 +1,2 @@
+livelycu_path = "C:\Program Files\Lively Wallpaper\livelycu.exe"
+wallpaper_path = "C:\Users\lordv\OneDrive\Documents\Live_Wallpapers"
